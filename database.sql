@@ -23,7 +23,7 @@ CREATE TABLE `users` (
     `email` VARCHAR(255) NOT NULL,
     `password` VARCHAR(255) NOT NULL,
     `username` VARCHAR(255) NOT NULL,
-    `inscription_date` DATETIME NOT NULL,
+    `register_date` DATETIME NOT NULL,
     `role_id` INT(10) UNSIGNED NOT NULL,
     PRIMARY KEY (`id`),
     CONSTRAINT `fk_roles_users` FOREIGN KEY (`role_id`) REFERENCES `roles` (`id`)
